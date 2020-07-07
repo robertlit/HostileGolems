@@ -1,0 +1,7 @@
+chance: 10
+types:
+  - ZOMBIE
+  - CREEPER
+  - SPIDER
+  - BAT
+  - SKELETON
