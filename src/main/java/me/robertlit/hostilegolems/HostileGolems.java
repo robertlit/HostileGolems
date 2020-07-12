@@ -51,6 +51,8 @@ public final class HostileGolems extends JavaPlugin implements Listener {
         event.setCancelled(true);
         IronGolem golem = (IronGolem) event.getLocation().getWorld().spawnEntity(event.getLocation(), EntityType.IRON_GOLEM);
         golem.addPotionEffect(new PotionEffect(PotionEffectType.GLOWING, Integer.MAX_VALUE, 0, true, false));
+        golem.setPersistent(false);
+        golem.setRemoveWhenFarAway(true);
     }
 
     @EventHandler(ignoreCancelled = true)
